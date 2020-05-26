@@ -1,4 +1,4 @@
-import { styled, IconButton, Typography } from "@material-ui/core";
+import { styled, IconButton, Typography, AppBar } from "@material-ui/core";
 import { Link } from "react-router-dom";
 
 export const StyledIconButton = styled(IconButton)(({ theme }) => ({
@@ -13,3 +13,7 @@ export const StyledLink = styled(Link)(({ theme }) => ({
 export const Title = styled(Typography)({
   flexGrow: 1,
 });
+
+export const StyledAppBar = styled(AppBar)(({ theme }) => ({
+  zIndex: theme.zIndex.drawer + 1,
+}));
