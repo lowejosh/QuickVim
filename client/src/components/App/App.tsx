@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
 import { Header } from "../Header/Header";
 import { Switch, Route } from "react-router-dom";
-import { Drawer, Box, Toolbar, Tabs } from "@material-ui/core";
+import { Toolbar, Tabs } from "@material-ui/core";
 import { StyledDrawer } from "./App.styles";
 
 export const App = () => {

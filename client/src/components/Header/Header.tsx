@@ -1,5 +1,5 @@
 import React, { useState, ChangeEvent } from "react";
-import { AppBar, Toolbar, Tabs, Tab } from "@material-ui/core";
+import { Toolbar, Tabs, Tab } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import { StyledIconButton, Title, StyledAppBar } from "./Header.styles";
 import { Link } from "react-router-dom";
