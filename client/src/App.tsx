@@ -1,13 +1,12 @@
 import React, { Fragment, useState, useCallback } from "react";
-import { Header } from "../Header/Header";
+import { Header } from "./components/Header/Header";
 import { Switch, Route } from "react-router-dom";
 import { StyledDrawer } from "./App.styles";
-import { DrawerMargin } from "./DrawerMargin";
+import { DrawerMargin } from "./components/App/DrawerMargin";
 import { useMediaQuery, Theme } from "@material-ui/core";
 
 const Create = ({ sideOpen }: { sideOpen: boolean }) => {
   const xs = useMediaQuery((theme: Theme) => theme.breakpoints.down("xs"));
-  console.log(xs);
 
   return (
     <StyledDrawer
