@@ -1,25 +1,7 @@
 import React, { Fragment, useState, useCallback } from "react";
 import { Header } from "./components/Header/Header";
 import { Switch, Route } from "react-router-dom";
-import { StyledDrawer } from "./App.styles";
-import { DrawerMargin } from "./components/App/DrawerMargin";
-import { useMediaQuery, Theme } from "@material-ui/core";
-
-const Create = ({ sideOpen }: { sideOpen: boolean }) => {
-  const xs = useMediaQuery((theme: Theme) => theme.breakpoints.down("xs"));
-
-  return (
-    <StyledDrawer
-      variant="persistent"
-      anchor="left"
-      open={sideOpen}
-      xs={xs ? 1 : 0} // s-c workaround
-    >
-      <DrawerMargin />
-      REOTOeajdiawodwaiddaw dadawdwa d
-    </StyledDrawer>
-  );
-};
+import { Create } from "./views/Create/Create";
 
 export const App = () => {
   const [sideOpen, setSideOpen] = useState(true);
@@ -36,7 +18,7 @@ export const App = () => {
           <Create sideOpen={sideOpen} />
         </Route>
         <Route exact path="/browse">
-          create
+          browse
         </Route>
       </Switch>
     </Fragment>
